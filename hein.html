@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telegram Contact</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      color: white;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      margin: 10px;
+    }
+
+    .apple-logo {
+      filter: drop-shadow(0 0 6px white);
+    }
+
+    .telegram-logo {
+      animation: rgbFilter 5s infinite linear;
+    }
+
+    @keyframes rgbFilter {
+      0%   { filter: drop-shadow(0 0 8px red); }
+      25%  { filter: drop-shadow(0 0 8px green); }
+      50%  { filter: drop-shadow(0 0 8px blue); }
+      75%  { filter: drop-shadow(0 0 8px violet); }
+      100% { filter: drop-shadow(0 0 8px red); }
+    }
+
+    .title {
+      font-size: 24px;
+      margin-top: 20px;
+      text-shadow: 0 0 10px #fff;
+      animation: glowText 3s infinite;
+    }
+
+    @keyframes glowText {
+      0% { text-shadow: 0 0 5px red; }
+      25% { text-shadow: 0 0 10px green; }
+      50% { text-shadow: 0 0 10px blue; }
+      75% { text-shadow: 0 0 10px violet; }
+      100% { text-shadow: 0 0 5px red; }
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: linear-gradient(45deg, red, green, blue, purple);
+      background-size: 300% 300%;
+      animation: rgbGlow 5s ease infinite;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    @keyframes rgbGlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="logo apple-logo" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo" class="logo telegram-logo" />
+    <div class="title">Join me on Telegram</div>
+    <a href="tg://resolve?domain=ZeroUselessTasks2">Open @ZeroUselessTasks2</a>
+  </div>
+</body>
+</html>
